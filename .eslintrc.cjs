@@ -34,5 +34,10 @@ module.exports = {
     'vue/no-setup-props-destructure': ['off'], // 關閉[props]的解放較驗 (props解構會丟失響應式)
 
     'no-undef': 'error' // 未定義變量使用報錯
+  },
+  globals: {
+    ElMessage: 'readonly',
+    ElMessageBox: 'readonly',
+    ElLoading: 'readonly'
   }
 }
